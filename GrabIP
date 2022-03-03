@@ -1,0 +1,19 @@
+<html>
+<head>
+<title> IP Address </title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $getJSON("https://api.ipify.org?format=json", function(data){
+    $("#ip").html(data.ip);
+  })
+ 
+ </script>
+ </head>
+ <body>
+  <center>
+    <h3> your IP address is:</h3>
+    <p id="ip"></p>
+  </center>
+</body>
+</html>
